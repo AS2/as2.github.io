@@ -1,4 +1,100 @@
-const translations={
-  en:{navWork:'Experience',navResearch:'Research',navEducation:'Education',eyebrow:'ML researcher & engineer · Saint Petersburg',heroTitle:'Building ML systems<br>for <em>real-world</em> problems.',heroLede:'I work at the intersection of NLP, AI agents, and computer vision — from research ideas to practical tools.',contact:'Get in touch',viewResearch:'Explore my research',heroMeta:'Research × engineering',focusLabel:'FOCUS',experienceLabel:'EXPERIENCE',experienceTitle:'Where I’ve worked',experienceNote:'Research and applied development<br>at the intersection of science and ML.',present:'PRESENT',fullTime:'Research',jobLabTitle:'Research Software Engineer',labBullet1:'Built a multi-agent system for scientific dataset metadata: LLM- and RAG-powered schema generation, annotation, and retrieval.',labBullet2:'Designed an OCR pipeline for clinical documents, extracting trial criteria and visits; F1 up to 1.0 for page and criterion localization.',labBullet3:'Adapted RCAN for fluorescence microscopy deconvolution without requiring an explicit point spread function.',jobCvTitle:'Computer Vision Engineer',physmech:'PhysMech Laboratory · SPbPU',cvBullet1:'Explored generative models for 3D modeling of compression screw profiles.',cvBullet2:'Developed a DeepSDF, VAE, and SIREN solution for continuous 2D profile generation, with MSE around 0.0006 near the boundary.',jobInternTitle:'Junior ML Developer · Intern',internship:'Internship',internBullet1:'Built IMU sensor datasets and trained models to classify device events and human activities.',internBullet2:'Reached ≈0.84 accuracy for event classification and ≈0.80 with LimuBERT for activity recognition.',researchLabel:'RESEARCH',researchTitle:'Publications & projects',researchNote:'Work at the intersection of<br>artificial intelligence and science.',confPaper:'CONFERENCE · 2026',journalPaper:'JOURNAL · 2025',sciDesc:'An LLM-powered multi-agent system for organizing, annotating, and retrieving scientific data.',readPaper:'Read publication',neuroDesc:'A neural network method for 3D deconvolution of fluorescence microscopy images.',selectedProject:'SELECTED PROJECT',repoDesc:'Open-source neural deconvolution for microscopy images.',educationLabel:'EDUCATION',educationTitle:'Education',educationNote:'Peter the Great St. Petersburg<br>Polytechnic University',master:'MSc',bachelor:'BSc',degreeField:'Applied Mathematics and Computer Science',masterThesis:'Thesis: “A multi-agent network for research assistance”',bachelorThesis:'Thesis: “Deep learning methods for point spread function estimation in confocal microscopy”',toolkit:'TOOLKIT',closingEyebrow:'HAVE AN IDEA OR A CHALLENGE?',closingTitle:'Let’s talk.',backTop:'Back to top ↑'},
-  ru:{navWork:'Опыт',navResearch:'Исследования',navEducation:'Образование',eyebrow:'ML researcher & engineer · Санкт-Петербург',heroTitle:'Создаю ML-системы<br>для <em>настоящих</em> задач.',heroLede:'Работаю на стыке NLP, AI-агентов и computer vision. От исследовательской идеи — до работающего инструмента.',contact:'Связаться',viewResearch:'Смотреть исследования',heroMeta:'Исследования × инженерия',focusLabel:'ФОКУС',experienceLabel:'ОПЫТ',experienceTitle:'Где я работал',experienceNote:'Исследования и прикладная разработка<br>в командах на стыке науки и ML.',present:'НАСТОЯЩЕЕ ВРЕМЯ',fullTime:'Исследования',jobLabTitle:'Программист-исследователь',labBullet1:'Разработал мультиагентную систему для управления метаданными научных датасетов: генерация схем, заполнение и поиск с помощью LLM и RAG.',labBullet2:'Спроектировал OCR-пайплайн для клинических документов: извлечение критериев исследований и визитов; F1 до 1.0 для локализации страниц и критериев.',labBullet3:'Адаптировал RCAN для деконволюции изображений флуоресцентной микроскопии без явного задания функции рассеяния точки.',jobCvTitle:'Инженер компьютерного зрения',physmech:'Лаборатория ФизМех · СПбПУ',cvBullet1:'Исследовал генеративные модели для 3D-моделирования профилей компрессионных винтов.',cvBullet2:'Разработал решение на базе DeepSDF, VAE и SIREN: непрерывная генерация 2D-профилей с MSE около 0.0006 вблизи границы.',jobInternTitle:'Младший ML-разработчик · стажировка',internship:'Стажировка',internBullet1:'Создавал датасеты с IMU-сенсоров и обучал модели для классификации событий устройства и человеческой активности.',internBullet2:'Добился accuracy ≈ 0.84 для классификации событий и ≈ 0.80 с LimuBERT для распознавания активности.',researchLabel:'ИССЛЕДОВАНИЯ',researchTitle:'Публикации и проекты',researchNote:'Работы на пересечении<br>искусственного интеллекта и науки.',confPaper:'КОНФЕРЕНЦИЯ · 2026',journalPaper:'ЖУРНАЛ · 2025',sciDesc:'Мультиагентная система на базе LLM для организации, разметки и поиска научных данных.',readPaper:'Читать публикацию',neuroDesc:'Нейросетевой метод 3D-деконволюции изображений флуоресцентной микроскопии.',selectedProject:'ИЗБРАННЫЙ ПРОЕКТ',repoDesc:'Открытый код для нейросетевой деконволюции микроскопических изображений.',educationLabel:'ОБРАЗОВАНИЕ',educationTitle:'Учился и изучал',educationNote:'Санкт-Петербургский политехнический<br>университет Петра Великого',master:'Магистратура',bachelor:'Бакалавриат',degreeField:'Прикладная математика и информатика',masterThesis:'ВКР: «Мультиагентная сеть сопровождения исследования»',bachelorThesis:'ВКР: «Методы глубокого обучения для построения ФРТ конфокального микроскопа»',toolkit:'ИНСТРУМЕНТЫ',closingEyebrow:'ЕСТЬ ИДЕЯ ИЛИ ЗАДАЧА?',closingTitle:'Давайте обсудим.',backTop:'Наверх ↑'}};
-let lang='ru';const toggle=document.getElementById('language-toggle');function setLanguage(next){lang=next;document.documentElement.lang=next;document.querySelectorAll('[data-i18n]').forEach(el=>{const value=translations[next][el.dataset.i18n];if(value!==undefined)el.innerHTML=value});toggle.innerHTML=next==='ru'?'EN <span>↗</span>':'RU <span>↗</span>';toggle.setAttribute('aria-label',next==='ru'?'Switch language':'Переключить язык');document.title=next==='ru'?'Александр Сачук — ML researcher & engineer':'Alexander Sachuk — ML researcher & engineer';document.querySelector('meta[name="description"]').content=next==='ru'?'Александр Сачук — ML-разработчик и исследователь. NLP, AI-агенты, computer vision и научные данные.':'Alexander Sachuk — ML researcher and engineer working on NLP, AI agents, computer vision, and scientific data.';localStorage.setItem('portfolio-language',next)}toggle.addEventListener('click',()=>setLanguage(lang==='ru'?'en':'ru'));document.getElementById('year').textContent=new Date().getFullYear();const saved=localStorage.getItem('portfolio-language');if(saved==='en')setLanguage('en');
+const translations = {
+  en: {
+    navWork: 'Experience', navResearch: 'Research', navEducation: 'Education',
+    eyebrow: 'AI researcher & ML engineer · Saint Petersburg',
+    heroTitle: 'AI researcher<br>and ML engineer',
+    heroLede: 'Open to collaborative research in NLP, DL-RL, GenAI, and computer vision.',
+    portraitAlt: 'Alex Sachuk', contact: 'Get in touch', viewResearch: 'Selected research',
+    experienceLabel: 'EXPERIENCE', experienceTitle: 'Experience',
+    experienceNote: 'Research and engineering<br>in machine learning.', present: 'PRESENT', fullTime: 'Research',
+    jobLabTitle: 'Research Software Engineer',
+    labBullet1: 'Developed an LLM- and RAG-based multi-agent system for scientific dataset metadata. The <a href="https://github.com/Biomed-imaging-lab/SciDataMAS" target="_blank" rel="noreferrer">SciDataMAS repository ↗</a> also includes a DSH plugin.',
+    labBullet2: 'Building a patient search system for clinical trials: an OCR pipeline structures medical records and eligibility criteria. <a href="https://mika.help/" target="_blank" rel="noreferrer">Mika ↗</a> is part of the system.',
+    labBullet3: 'Adapted RCAN to improve fluorescence microscopy images without explicitly specifying a point spread function. <a href="https://github.com/Biomed-imaging-lab/NeuroDecon" target="_blank" rel="noreferrer">NeuroDecon code ↗</a>',
+    jobCvTitle: 'Computer Vision Engineer', physmech: 'PhysMech Laboratory · SPbPU',
+    cvBullet1: 'Explored generative models for 3D modeling of compression screw profiles.',
+    cvBullet2: 'Developed a DeepSDF, VAE, and SIREN solution for continuous 2D profile generation, with MSE around 0.0006 near the boundary.',
+    jobInternTitle: 'Junior ML Developer · Intern', internship: 'Internship',
+    internBullet1: 'Built IMU sensor datasets and trained models to classify device events and human activities.',
+    internBullet2: 'Reached ≈0.84 accuracy for event classification and ≈0.80 with LimuBERT for activity recognition.',
+    researchLabel: 'RESEARCH', researchTitle: 'Publications & projects',
+    researchNote: 'Scientific data, LLMs,<br>and computer vision.', confPaper: 'CONFERENCE · 2026', journalPaper: 'JOURNAL · 2025',
+    sciDesc: 'An LLM-powered multi-agent system for organizing, annotating, and retrieving scientific data.',
+    readPaper: 'Read publication', neuroDesc: 'A neural network method for 3D deconvolution of fluorescence microscopy images.',
+    workshop: 'WORKSHOP · 2026',
+    icdmTitle: 'ADSD: AI-ready Data for Science Discovery · ICDM 2026',
+    icdmDesc: 'Presented research on LLM properties for scientific data organization at the ICDM 2026 workshop. A paper is in preparation.',
+    inPrep: 'Paper in preparation', selectedProject: 'SELECTED PROJECT',
+    repoDesc: 'Open-source neural deconvolution for microscopy images.',
+    educationLabel: 'EDUCATION', educationTitle: 'Education',
+    educationNote: 'Peter the Great St. Petersburg<br>Polytechnic University', master: 'MSc', bachelor: 'BSc',
+    degreeField: 'Applied Mathematics and Computer Science',
+    masterThesis: 'Thesis: “A multi-agent network for research assistance”',
+    bachelorThesis: 'Thesis: “Deep learning methods for point spread function estimation in confocal microscopy”',
+    toolkit: 'TOOLS', closingEyebrow: 'COLLABORATION',
+    closingTitle: 'Open to research collaborations.',
+    contactCopy: 'I welcome joint research, scientific projects, and engineering work in NLP, DL-RL, GenAI, and computer vision.',
+    backTop: 'Back to top ↑'
+  },
+  ru: {
+    navWork: 'Опыт', navResearch: 'Исследования', navEducation: 'Образование',
+    eyebrow: 'AI-исследователь и ML-инженер · Санкт-Петербург',
+    heroTitle: 'AI-исследователь<br>и ML-инженер',
+    heroLede: 'Открыт к совместным исследованиям в областях NLP, DL-RL, GenAI и computer vision.',
+    portraitAlt: 'Александр Сачук', contact: 'Связаться', viewResearch: 'Публикации и проекты',
+    experienceLabel: 'ОПЫТ', experienceTitle: 'Опыт работы',
+    experienceNote: 'Исследовательская и инженерная работа<br>в области машинного обучения.', present: 'НАСТОЯЩЕЕ ВРЕМЯ', fullTime: 'Исследования',
+    jobLabTitle: 'Программист-исследователь',
+    labBullet1: 'Разработал мультиагентную систему для работы с метаданными научных датасетов на базе LLM и RAG. В репозитории <a href="https://github.com/Biomed-imaging-lab/SciDataMAS" target="_blank" rel="noreferrer">SciDataMAS ↗</a> также есть DSH-плагин.',
+    labBullet2: 'Разрабатываю систему поиска пациентов для клинических исследований: OCR-пайплайн структурирует медицинские документы и критерии отбора. Часть системы — <a href="https://mika.help/" target="_blank" rel="noreferrer">Mika ↗</a>.',
+    labBullet3: 'Адаптировал RCAN для улучшения снимков флуоресцентной микроскопии без явного задания функции рассеяния точки. <a href="https://github.com/Biomed-imaging-lab/NeuroDecon" target="_blank" rel="noreferrer">Код NeuroDecon ↗</a>',
+    jobCvTitle: 'Инженер компьютерного зрения', physmech: 'Лаборатория ФизМех · СПбПУ',
+    cvBullet1: 'Исследовал генеративные модели для 3D-моделирования профилей компрессионных винтов.',
+    cvBullet2: 'Разработал решение на базе DeepSDF, VAE и SIREN: непрерывная генерация 2D-профилей с MSE около 0.0006 вблизи границы.',
+    jobInternTitle: 'Младший ML-разработчик · стажировка', internship: 'Стажировка',
+    internBullet1: 'Создавал датасеты с IMU-сенсоров и обучал модели для классификации событий устройства и человеческой активности.',
+    internBullet2: 'Добился accuracy ≈ 0.84 для классификации событий и ≈ 0.80 с LimuBERT для распознавания активности.',
+    researchLabel: 'ИССЛЕДОВАНИЯ', researchTitle: 'Публикации и проекты',
+    researchNote: 'Научные данные, LLM<br>и компьютерное зрение.', confPaper: 'КОНФЕРЕНЦИЯ · 2026', journalPaper: 'ЖУРНАЛ · 2025',
+    sciDesc: 'Мультиагентная система на базе LLM для организации, разметки и поиска научных данных.',
+    readPaper: 'Читать публикацию', neuroDesc: 'Нейросетевой метод 3D-деконволюции изображений флуоресцентной микроскопии.',
+    workshop: 'WORKSHOP · 2026',
+    icdmTitle: 'ADSD: AI-ready Data for Science Discovery · ICDM 2026',
+    icdmDesc: 'Представил исследование свойств LLM при организации научных данных на воркшопе ICDM 2026. Статья готовится.',
+    inPrep: 'Статья в подготовке', selectedProject: 'ИЗБРАННЫЙ ПРОЕКТ',
+    repoDesc: 'Открытый код для нейросетевой деконволюции микроскопических изображений.',
+    educationLabel: 'ОБРАЗОВАНИЕ', educationTitle: 'Образование',
+    educationNote: 'Санкт-Петербургский политехнический<br>университет Петра Великого', master: 'Магистратура', bachelor: 'Бакалавриат',
+    degreeField: 'Прикладная математика и информатика',
+    masterThesis: 'ВКР: «Мультиагентная сеть сопровождения исследования»',
+    bachelorThesis: 'ВКР: «Методы глубокого обучения для построения ФРТ конфокального микроскопа»',
+    toolkit: 'ИНСТРУМЕНТЫ', closingEyebrow: 'СОВМЕСТНЫЕ ИССЛЕДОВАНИЯ',
+    closingTitle: 'Открыт к сотрудничеству.',
+    contactCopy: 'Буду рад совместным исследованиям, научным проектам и инженерным задачам в NLP, DL-RL, GenAI и computer vision.',
+    backTop: 'Наверх ↑'
+  }
+};
+
+let lang = 'ru';
+const toggle = document.getElementById('language-toggle');
+function setLanguage(next) {
+  lang = next;
+  document.documentElement.lang = next;
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const value = translations[next][el.dataset.i18n];
+    if (value !== undefined) el.innerHTML = value;
+  });
+  document.querySelectorAll('[data-i18n-alt]').forEach(el => {
+    el.alt = translations[next][el.dataset.i18nAlt];
+  });
+  toggle.innerHTML = next === 'ru' ? 'EN <span>↗</span>' : 'RU <span>↗</span>';
+  toggle.setAttribute('aria-label', next === 'ru' ? 'Switch language' : 'Переключить язык');
+  document.title = next === 'ru' ? 'Александр Сачук — AI-исследователь и ML-инженер' : 'Alex Sachuk — AI researcher & ML engineer';
+  document.querySelector('meta[name="description"]').content = next === 'ru'
+    ? 'Александр Сачук — AI-исследователь и ML-инженер. Интересы: NLP, DL-RL, GenAI и computer vision.'
+    : 'Alex Sachuk is an AI researcher and ML engineer interested in NLP, DL-RL, GenAI, and computer vision.';
+  localStorage.setItem('portfolio-language', next);
+}
+toggle.addEventListener('click', () => setLanguage(lang === 'ru' ? 'en' : 'ru'));
+document.getElementById('year').textContent = new Date().getFullYear();
+if (localStorage.getItem('portfolio-language') === 'en') setLanguage('en');
