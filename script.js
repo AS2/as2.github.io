@@ -2,15 +2,15 @@ const translations = {
   en: {
     navWork: 'Experience', navResearch: 'Research', navEducation: 'Education',
     eyebrow: 'AI researcher & ML engineer · Saint Petersburg',
-    heroTitle: 'Hi, I’m Alex Sachuk.<br>Nice to meet you!',
-    heroLede: 'I enjoy working through challenging problems with people from different fields. I’m especially interested in projects around NLP, DL-RL, GenAI, and computer vision.',
-    portraitAlt: 'Alex Sachuk', scidataRepo: 'SciDataMAS repository ↗', contact: 'Get in touch', viewResearch: 'Selected research',
+    heroTitle: 'Hi, I’m Alex Sachuk. I enjoy ML/AI and building useful things.',
+    heroLede: 'I’d be happy to collaborate on research in NLP, DL-RL, GenAI, and computer vision.',
+    portraitAlt: 'Alex Sachuk', scidataRepo: 'SciDataMAS repository ->', contact: 'Get in touch', viewResearch: 'Selected research',
     experienceLabel: 'EXPERIENCE', experienceTitle: 'Experience',
     experienceNote: 'Research and engineering<br>in machine learning.', present: 'PRESENT', fullTime: 'Research',
     jobLabTitle: 'Research Software Engineer', labCompany: 'Biomedical Imaging and Data Analysis Laboratory · SPbPU',
-    labBullet1: 'Developed an LLM- and RAG-based multi-agent system for scientific dataset metadata. The <a href="https://github.com/Biomed-imaging-lab/SciDataMAS" target="_blank" rel="noreferrer">SciDataMAS repository ↗</a> also includes a DSH plugin.',
-    labBullet2: 'Building a patient search system for clinical trials: an OCR pipeline structures medical records and eligibility criteria. <a href="https://mika.help/" target="_blank" rel="noreferrer">Mika ↗</a> is part of the system.',
-    labBullet3: 'Adapted RCAN to improve fluorescence microscopy images without explicitly specifying a point spread function. <a href="https://github.com/Biomed-imaging-lab/NeuroDecon" target="_blank" rel="noreferrer">NeuroDecon code ↗</a>',
+    labBullet1: 'Developed an LLM- and RAG-based multi-agent system for scientific dataset metadata. The <a href="https://github.com/Biomed-imaging-lab/SciDataMAS" target="_blank" rel="noreferrer">SciDataMAS repository -></a> also includes a DSH plugin.',
+    labBullet2: 'Building a patient search system for clinical trials: an OCR pipeline structures medical records and eligibility criteria. <a href="https://mika.help/" target="_blank" rel="noreferrer">Mika -></a> is part of the system.',
+    labBullet3: 'Adapted RCAN to improve fluorescence microscopy images without explicitly specifying a point spread function. <a href="https://github.com/Biomed-imaging-lab/NeuroDecon" target="_blank" rel="noreferrer">NeuroDecon code -></a>',
     jobCvTitle: 'Computer Vision Engineer', physmech: 'PhysMech Laboratory · SPbPU',
     cvBullet1: 'Explored generative models for 3D modeling of compression screw profiles.',
     cvBullet2: 'Developed a DeepSDF, VAE, and SIREN solution for continuous 2D profile generation, with MSE around 0.0006 near the boundary.',
@@ -39,15 +39,15 @@ const translations = {
   ru: {
     navWork: 'Опыт', navResearch: 'Исследования', navEducation: 'Образование',
     eyebrow: 'AI-исследователь и ML-инженер · Санкт-Петербург',
-    heroTitle: 'Привет! Я Александр Сачук.<br>Рад знакомству!',
-    heroLede: 'Мне нравится разбираться в сложных задачах вместе с людьми из разных областей. Особенно интересны проекты по NLP, DL-RL, GenAI и computer vision.',
-    portraitAlt: 'Александр Сачук', scidataRepo: 'Репозиторий SciDataMAS ↗', contact: 'Связаться', viewResearch: 'Публикации и проекты',
+    heroTitle: 'Привет! Я Александр Сачук. Люблю ML/AI и полезные проекты.',
+    heroLede: 'Буду рад совместной работе над исследованиями в NLP, DL-RL, GenAI и computer vision.',
+    portraitAlt: 'Александр Сачук', scidataRepo: 'Репозиторий SciDataMAS ->', contact: 'Связаться', viewResearch: 'Публикации и проекты',
     experienceLabel: 'ОПЫТ', experienceTitle: 'Опыт работы',
     experienceNote: 'Исследовательская и инженерная работа<br>в области машинного обучения.', present: 'НАСТОЯЩЕЕ ВРЕМЯ', fullTime: 'Исследования',
     jobLabTitle: 'Программист-исследователь', labCompany: 'Лаборатория ЛАБИД · СПбПУ',
-    labBullet1: 'Разработал мультиагентную систему для работы с метаданными научных датасетов на базе LLM и RAG. В репозитории <a href="https://github.com/Biomed-imaging-lab/SciDataMAS" target="_blank" rel="noreferrer">SciDataMAS ↗</a> также есть DSH-плагин.',
-    labBullet2: 'Разрабатываю систему поиска пациентов для клинических исследований: OCR-пайплайн структурирует медицинские документы и критерии отбора. Часть системы — <a href="https://mika.help/" target="_blank" rel="noreferrer">Mika ↗</a>.',
-    labBullet3: 'Адаптировал RCAN для улучшения снимков флуоресцентной микроскопии без явного задания функции рассеяния точки. <a href="https://github.com/Biomed-imaging-lab/NeuroDecon" target="_blank" rel="noreferrer">Код NeuroDecon ↗</a>',
+    labBullet1: 'Разработал мультиагентную систему для работы с метаданными научных датасетов на базе LLM и RAG. В репозитории <a href="https://github.com/Biomed-imaging-lab/SciDataMAS" target="_blank" rel="noreferrer">SciDataMAS -></a> также есть DSH-плагин.',
+    labBullet2: 'Разрабатываю систему поиска пациентов для клинических исследований: OCR-пайплайн структурирует медицинские документы и критерии отбора. Часть системы — <a href="https://mika.help/" target="_blank" rel="noreferrer">Mika -></a>.',
+    labBullet3: 'Адаптировал RCAN для улучшения снимков флуоресцентной микроскопии без явного задания функции рассеяния точки. <a href="https://github.com/Biomed-imaging-lab/NeuroDecon" target="_blank" rel="noreferrer">Код NeuroDecon -></a>',
     jobCvTitle: 'Инженер компьютерного зрения', physmech: 'Лаборатория ФизМех · СПбПУ',
     cvBullet1: 'Исследовал генеративные модели для 3D-моделирования профилей компрессионных винтов.',
     cvBullet2: 'Разработал решение на базе DeepSDF, VAE и SIREN: непрерывная генерация 2D-профилей с MSE около 0.0006 вблизи границы.',
@@ -87,7 +87,7 @@ function setLanguage(next) {
   document.querySelectorAll('[data-i18n-alt]').forEach(el => {
     el.alt = translations[next][el.dataset.i18nAlt];
   });
-  toggle.innerHTML = next === 'ru' ? 'EN <span>↗</span>' : 'RU <span>↗</span>';
+  toggle.innerHTML = next === 'ru' ? 'EN <span>-></span>' : 'RU <span>-></span>';
   toggle.setAttribute('aria-label', next === 'ru' ? 'Switch language' : 'Переключить язык');
   document.title = next === 'ru' ? 'Александр Сачук — AI-исследователь и ML-инженер' : 'Alex Sachuk — AI researcher & ML engineer';
   document.querySelector('meta[name="description"]').content = next === 'ru'
