@@ -2,8 +2,8 @@ const translations = {
   en: {
     navWork: 'Experience', navResearch: 'Research', navEducation: 'Education',
     eyebrow: 'AI researcher & ML engineer · Saint Petersburg',
-    heroTitle: 'Hi, I’m Alex Sachuk. I enjoy ML/AI and building useful things.',
-    heroLede: 'I’d be happy to collaborate on research in NLP, DL-RL, GenAI, and computer vision.',
+    heroTitle: 'Hi, I’m Alex Sachuk.',
+    heroLede: 'I love to work on hard tasks with great people from different fields. I’d be happy to collaborate on research in NLP, DL-RL, GenAI, CV.',
     portraitAlt: 'Alex Sachuk', scidataRepo: 'SciDataMAS repository ->', contact: 'Get in touch', viewResearch: 'Selected research',
     experienceLabel: 'EXPERIENCE', experienceTitle: 'Experience',
     experienceNote: 'Research and engineering<br>in machine learning.', present: 'PRESENT', fullTime: 'Research',
@@ -39,8 +39,8 @@ const translations = {
   ru: {
     navWork: 'Опыт', navResearch: 'Исследования', navEducation: 'Образование',
     eyebrow: 'AI-исследователь и ML-инженер · Санкт-Петербург',
-    heroTitle: 'Привет! Я Александр Сачук. Люблю ML/AI и полезные проекты.',
-    heroLede: 'Буду рад совместной работе над исследованиями в NLP, DL-RL, GenAI и computer vision.',
+    heroTitle: 'Привет! Я Александр Сачук.',
+    heroLede: 'Я люблю решать сложные задачи вместе с людьми из разных областей. Буду рад совместной работе над исследованиями в NLP, DL-RL, GenAI и CV.',
     portraitAlt: 'Александр Сачук', scidataRepo: 'Репозиторий SciDataMAS ->', contact: 'Связаться', viewResearch: 'Публикации и проекты',
     experienceLabel: 'ОПЫТ', experienceTitle: 'Опыт работы',
     experienceNote: 'Исследовательская и инженерная работа<br>в области машинного обучения.', present: 'НАСТОЯЩЕЕ ВРЕМЯ', fullTime: 'Исследования',
@@ -75,7 +75,7 @@ const translations = {
   }
 };
 
-let lang = 'ru';
+let lang = 'en';
 const toggle = document.getElementById('language-toggle');
 function setLanguage(next) {
   lang = next;
@@ -93,8 +93,9 @@ function setLanguage(next) {
   document.querySelector('meta[name="description"]').content = next === 'ru'
     ? 'Александр Сачук — AI-исследователь и ML-инженер. Интересы: NLP, DL-RL, GenAI и computer vision.'
     : 'Alex Sachuk is an AI researcher and ML engineer interested in NLP, DL-RL, GenAI, and computer vision.';
-  localStorage.setItem('portfolio-language', next);
+  localStorage.setItem('portfolio-language-v2', next);
 }
 toggle.addEventListener('click', () => setLanguage(lang === 'ru' ? 'en' : 'ru'));
 document.getElementById('year').textContent = new Date().getFullYear();
-if (localStorage.getItem('portfolio-language') === 'en') setLanguage('en');
+const savedLanguage = localStorage.getItem('portfolio-language-v2');
+setLanguage(savedLanguage === 'ru' ? 'ru' : 'en');
