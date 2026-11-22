@@ -1,16 +1,21 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#344e41">
-  <meta name="description" content="Александр Сачук — AI-исследователь и ML-инженер. Интересы: NLP, DL-RL, GenAI и computer vision.">
+  <meta name="description"
+    content="Александр Сачук — AI-исследователь и ML-инженер. Интересы: NLP, DL-RL, GenAI и computer vision.">
   <title>Alex Sachuk — AI researcher & ML engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="site-shell">
     <header class="topbar">
@@ -20,18 +25,23 @@
         <a href="#research" data-i18n="navResearch">Исследования</a>
         <a href="#education" data-i18n="navEducation">Образование</a>
       </nav>
-      <button class="language" id="language-toggle" type="button" aria-label="Switch language">EN <span>↗</span></button>
+      <button class="language" id="language-toggle" type="button" aria-label="Switch language">EN
+        <span>↗</span></button>
     </header>
 
     <main>
       <section class="hero" id="home">
         <div class="hero-copy">
           <p class="eyebrow"><span data-i18n="eyebrow">AI-исследователь и ML-инженер · Санкт-Петербург</span></p>
-          <h1 data-i18n="heroTitle">AI-исследователь<br>и ML-инженер</h1>
-          <p class="hero-lede" data-i18n="heroLede">Открыт к совместным исследованиям в областях NLP, DL-RL, GenAI и computer vision.</p>
+          <h2 data-i18n="heroTitle">Привет!<br>Я <i>Александр Сачук</i>, <br> люблю ML/AI-задачи и делать полезные вещи.
+          </h2>
+          <p class="hero-lede" data-i18n="heroLede">Открыт к совместным исследованиям в областях NLP, DL-RL, GenAI и
+            computer vision.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="mailto:sachuk.as.bsns@gmail.com"><span data-i18n="contact">Связаться</span><span aria-hidden="true">↗</span></a>
-            <a class="text-link" href="#research"><span data-i18n="viewResearch">Смотреть исследования</span><span aria-hidden="true">↓</span></a>
+            <a class="button button-primary" href="mailto:sachuk.as.bsns@gmail.com"><span
+                data-i18n="contact">Связаться</span><span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#research"><span data-i18n="viewResearch">Смотреть исследования</span><span
+                aria-hidden="true">↓</span></a>
           </div>
           <div class="social-links">
             <a href="https://github.com/AS2" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
@@ -39,7 +49,7 @@
             <a href="mailto:sachuk.as.bsns@gmail.com">Email <span>↗</span></a>
           </div>
         </div>
-        <figure class="hero-art">
+        <figure class="hero-avatar">
           <img src="portrait.jpg" alt="Александр Сачук" data-i18n-alt="portraitAlt">
         </figure>
         <div class="hero-meta"><span data-i18n="heroMeta">Исследования × инженерия</span><span>01 — 04</span></div>
@@ -47,37 +57,160 @@
 
       <section class="focus-strip" aria-label="Areas of focus">
         <span class="strip-label" data-i18n="focusLabel">ФОКУС</span>
-        <span>NLP <b>✳</b></span><span>AI AGENTS <b>✳</b></span><span>COMPUTER VISION <b>✳</b></span><span>SCIENTIFIC ML</span>
+        <span>NLP <b>✳</b></span><span>AI AGENTS <b>✳</b></span><span>COMPUTER VISION <b>✳</b></span><span>SCIENTIFIC
+          ML</span>
       </section>
 
       <section class="section work-section" id="work">
-        <div class="section-heading"><div><p class="eyebrow section-index">01 / <span data-i18n="experienceLabel">ОПЫТ</span></p><h2 data-i18n="experienceTitle">Опыт работы</h2></div><p class="section-note" data-i18n="experienceNote">Исследовательская и инженерная работа<br>в области машинного обучения.</p></div>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow section-index">01 / <span data-i18n="experienceLabel">ОПЫТ</span></p>
+            <h2 data-i18n="experienceTitle">Опыт работы</h2>
+          </div>
+          <p class="section-note" data-i18n="experienceNote">Исследовательская и инженерная работа<br>в области
+            машинного обучения.</p>
+        </div>
         <div class="timeline">
-          <article class="job"><div class="job-date">06.2023 — <span data-i18n="present">НАСТОЯЩЕЕ ВРЕМЯ</span></div><div class="job-main"><div class="job-title-row"><h3 data-i18n="jobLabTitle">Программист-исследователь</h3><span class="job-type" data-i18n="fullTime">Исследования</span></div><p class="company">Лаборатория ЛАБИД · СПбПУ</p><ul><li data-i18n="labBullet1">Разработал мультиагентную систему управления метаданными научных датасетов на базе LLM и RAG. В репозитории есть DSH-плагин.</li><li data-i18n="labBullet2">Разрабатываю систему поиска пациентов для клинических исследований: OCR-пайплайн структурирует медицинские документы и критерии отбора. Часть системы — <a href="https://mika.help/" target="_blank" rel="noreferrer">Mika</a>.</li><li data-i18n="labBullet3">Адаптировал RCAN для повышения качества снимков флуоресцентной микроскопии без явного задания функции рассеяния точки. <a href="https://github.com/Biomed-imaging-lab/NeuroDecon" target="_blank" rel="noreferrer">Код NeuroDecon ↗</a></li></ul><div class="tags"><span>LLM</span><span>RAG</span><span>OCR</span><span>PyTorch</span></div></div></article>
-          <article class="job"><div class="job-date">08.2025 — 05.2026</div><div class="job-main"><div class="job-title-row"><h3 data-i18n="jobCvTitle">Инженер компьютерного зрения</h3><span class="job-type">R&amp;D</span></div><p class="company" data-i18n="physmech">Лаборатория ФизМех · СПбПУ</p><ul><li data-i18n="cvBullet1">Исследовал генеративные модели для 3D-моделирования профилей компрессионных винтов.</li><li data-i18n="cvBullet2">Разработал решение на базе DeepSDF, VAE и SIREN: непрерывная генерация 2D-профилей с MSE около 0.0006 вблизи границы.</li></ul><div class="tags"><span>3D</span><span>DeepSDF</span><span>VAE</span><span>SIREN</span></div></div></article>
-          <article class="job"><div class="job-date">11.2022 — 04.2023</div><div class="job-main"><div class="job-title-row"><h3 data-i18n="jobInternTitle">Младший ML-разработчик · стажировка</h3><span class="job-type" data-i18n="internship">Стажировка</span></div><p class="company">DataMist</p><ul><li data-i18n="internBullet1">Создавал датасеты с IMU-сенсоров и обучал модели для классификации событий устройства и человеческой активности.</li><li data-i18n="internBullet2">Добился accuracy ≈ 0.84 для классификации событий и ≈ 0.80 с LimuBERT для распознавания активности.</li></ul><div class="tags"><span>IMU</span><span>LSTM</span><span>BERT</span></div></div></article>
+          <article class="job">
+            <div class="job-date">06.2023 — <span data-i18n="present">НАСТОЯЩЕЕ ВРЕМЯ</span></div>
+            <div class="job-main">
+              <div class="job-title-row">
+                <h3 data-i18n="jobLabTitle">Программист-исследователь</h3><span class="job-type"
+                  data-i18n="fullTime">Исследования</span>
+              </div>
+              <p class="company" data-i18n="labCompany">Лаборатория ЛАБИД · СПбПУ</p>
+              <ul>
+                <li data-i18n="labBullet1">Разработал мультиагентную систему управления метаданными научных датасетов на
+                  базе LLM и RAG. В репозитории <a href="https://github.com/Biomed-imaging-lab/SciDataMAS"
+                    target="_blank" rel="noreferrer">SciDataMAS ↗</a> есть DSH-плагин.</li>
+                <li data-i18n="labBullet2">Разрабатываю систему поиска пациентов для клинических исследований:
+                  OCR-пайплайн структурирует медицинские документы и критерии отбора. Часть системы — <a
+                    href="https://mika.help/" target="_blank" rel="noreferrer">Mika</a>.</li>
+                <li data-i18n="labBullet3">Адаптировал RCAN для повышения качества снимков флуоресцентной микроскопии
+                  без явного задания функции рассеяния точки. <a href="https://github.com/Biomed-imaging-lab/NeuroDecon"
+                    target="_blank" rel="noreferrer">Код NeuroDecon ↗</a></li>
+              </ul>
+              <div class="tags"><span>LLM</span><span>RAG</span><span>OCR</span><span>PyTorch</span></div>
+            </div>
+          </article>
+          <article class="job">
+            <div class="job-date">08.2025 — 05.2026</div>
+            <div class="job-main">
+              <div class="job-title-row">
+                <h3 data-i18n="jobCvTitle">Инженер компьютерного зрения</h3><span class="job-type">R&amp;D</span>
+              </div>
+              <p class="company" data-i18n="physmech">Лаборатория ФизМех · СПбПУ</p>
+              <ul>
+                <li data-i18n="cvBullet1">Исследовал генеративные модели для 3D-моделирования профилей компрессионных
+                  винтов.</li>
+                <li data-i18n="cvBullet2">Разработал решение на базе DeepSDF, VAE и SIREN: непрерывная генерация
+                  2D-профилей с MSE около 0.0006 вблизи границы.</li>
+              </ul>
+              <div class="tags"><span>3D</span><span>DeepSDF</span><span>VAE</span><span>SIREN</span></div>
+            </div>
+          </article>
+          <article class="job">
+            <div class="job-date">11.2022 — 04.2023</div>
+            <div class="job-main">
+              <div class="job-title-row">
+                <h3 data-i18n="jobInternTitle">Младший ML-разработчик · стажировка</h3><span class="job-type"
+                  data-i18n="internship">Стажировка</span>
+              </div>
+              <p class="company">DataMist</p>
+              <ul>
+                <li data-i18n="internBullet1">Создавал датасеты с IMU-сенсоров и обучал модели для классификации событий
+                  устройства и человеческой активности.</li>
+                <li data-i18n="internBullet2">Добился accuracy ≈ 0.84 для классификации событий и ≈ 0.80 с LimuBERT для
+                  распознавания активности.</li>
+              </ul>
+              <div class="tags"><span>IMU</span><span>LSTM</span><span>BERT</span></div>
+            </div>
+          </article>
         </div>
       </section>
 
       <section class="section research-section" id="research">
-        <div class="section-heading"><div><p class="eyebrow section-index">02 / <span data-i18n="researchLabel">ИССЛЕДОВАНИЯ</span></p><h2 data-i18n="researchTitle">Публикации и проекты</h2></div><p class="section-note" data-i18n="researchNote">Научные данные, LLM<br>и компьютерное зрение.</p></div>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow section-index">02 / <span data-i18n="researchLabel">ИССЛЕДОВАНИЯ</span></p>
+            <h2 data-i18n="researchTitle">Публикации и проекты</h2>
+          </div>
+          <p class="section-note" data-i18n="researchNote">Научные данные, LLM<br>и компьютерное зрение.</p>
+        </div>
         <div class="research-grid">
-          <article class="paper paper-featured"><div class="paper-top"><span class="paper-type" data-i18n="confPaper">КОНФЕРЕНЦИЯ · 2026</span><span class="paper-no">01</span></div><h3>SciDataMAS: LLM-Driven MAS for Scientific Data Management</h3><p class="paper-desc" data-i18n="sciDesc">Мультиагентная система на базе LLM для организации, разметки и поиска научных данных.</p><p class="paper-authors">A. Sachuk, V. Chukanov, E. Pchitskaya · AAAI-26</p><a class="paper-link" href="https://doi.org/10.1609/aaai.v40i48.42275" target="_blank" rel="noreferrer"><span data-i18n="readPaper">Читать публикацию</span><span>↗</span></a></article>
-          <article class="paper"><div class="paper-top"><span class="paper-type" data-i18n="journalPaper">ЖУРНАЛ · 2025</span><span class="paper-no">02</span></div><h3>NeuroDecon: A Neural Network-Based Method for Three-Dimensional Deconvolution of Fluorescent Microscopic Images</h3><p class="paper-desc" data-i18n="neuroDesc">Нейросетевой метод 3D-деконволюции изображений флуоресцентной микроскопии.</p><p class="paper-authors">A. Sachuk et al. · <em>International Journal of Molecular Sciences</em></p><a class="paper-link" href="https://doi.org/10.3390/ijms26188770" target="_blank" rel="noreferrer"><span data-i18n="readPaper">Читать публикацию</span><span>↗</span></a></article>
-          <article class="paper"><div class="paper-top"><span class="paper-type" data-i18n="workshop">WORKSHOP · 2026</span></div><h3><a href="https://cnicds.github.io/ICDM2026/" target="_blank" rel="noreferrer" data-i18n="icdmTitle">ADSD: AI-ready Data for Science Discovery · ICDM 2026</a></h3><p class="paper-desc" data-i18n="icdmDesc">Представил исследование свойств LLM при организации научных данных на воркшопе ICDM 2026. Статья готовится.</p><p class="paper-authors" data-i18n="inPrep">Статья в подготовке</p></article>
-          <article class="project-card"><div class="project-symbol">↗</div><div><span class="paper-type" data-i18n="selectedProject">ИЗБРАННЫЙ ПРОЕКТ</span><h3>NeuroDecon</h3><p class="paper-desc" data-i18n="repoDesc">Открытый код для нейросетевой деконволюции микроскопических изображений.</p></div><a class="project-link" href="https://github.com/Biomed-imaging-lab/NeuroDecon" target="_blank" rel="noreferrer" aria-label="NeuroDecon on GitHub">↗</a></article>
+          <article class="paper paper-featured">
+            <div class="paper-top"><span class="paper-type" data-i18n="confPaper">КОНФЕРЕНЦИЯ A* · 2026</span><span
+                class="paper-no">01</span></div>
+            <h3>SciDataMAS: LLM-Driven MAS for Scientific Data Management</h3>
+            <p class="paper-desc" data-i18n="sciDesc">Мультиагентная система на базе LLM для организации, разметки и
+              поиска научных данных.</p>
+            <p class="paper-authors">A. Sachuk, V. Chukanov, E. Pchitskaya · AAAI-26</p><a class="paper-link"
+              href="https://doi.org/10.1609/aaai.v40i48.42275" target="_blank" rel="noreferrer"><span
+                data-i18n="readPaper">Читать публикацию</span><span>↗</span></a>
+          </article>
+          <article class="paper">
+            <div class="paper-top"><span class="paper-type" data-i18n="journalPaper">ЖУРНАЛ Q1 · 2025</span><span
+                class="paper-no">02</span></div>
+            <h3>NeuroDecon: A Neural Network-Based Method for Three-Dimensional Deconvolution of Fluorescent Microscopic
+              Images</h3>
+            <p class="paper-desc" data-i18n="neuroDesc">Нейросетевой метод 3D-деконволюции изображений флуоресцентной
+              микроскопии.</p>
+            <p class="paper-authors">A. Sachuk et al. · <em>International Journal of Molecular Sciences</em></p><a
+              class="paper-link" href="https://doi.org/10.3390/ijms26188770" target="_blank" rel="noreferrer"><span
+                data-i18n="readPaper">Читать публикацию</span><span>↗</span></a>
+          </article>
+          <article class="paper">
+            <div class="paper-top"><span class="paper-type" data-i18n="workshop">WORKSHOP A* · 2026</span></div>
+            <h3><a href="https://cnicds.github.io/ICDM2026/" target="_blank" rel="noreferrer"
+                data-i18n="icdmTitle">ADSD: AI-ready Data for Science Discovery · ICDM 2026</a></h3>
+            <p class="paper-desc" data-i18n="icdmDesc">Представил исследование свойств LLM при организации научных
+              данных на воркшопе ICDM 2026. Статья готовится.</p>
+            <p class="paper-authors" data-i18n="inPrep">Статья в подготовке</p>
+          </article>
         </div>
       </section>
 
       <section class="section education-section" id="education">
-        <div class="section-heading"><div><p class="eyebrow section-index">03 / <span data-i18n="educationLabel">ОБРАЗОВАНИЕ</span></p><h2 data-i18n="educationTitle">Учился и изучал</h2></div><p class="section-note" data-i18n="educationNote">Санкт-Петербургский политехнический<br>университет Петра Великого</p></div>
-        <div class="education-grid"><article class="degree"><span class="degree-date">2023 — 2025</span><h3 data-i18n="master">Магистратура</h3><p data-i18n="degreeField">Прикладная математика и информатика</p><span class="degree-detail" data-i18n="masterThesis">ВКР: «Мультиагентная сеть сопровождения исследования»</span></article><article class="degree"><span class="degree-date">2019 — 2023</span><h3 data-i18n="bachelor">Бакалавриат</h3><p data-i18n="degreeField">Прикладная математика и информатика</p><span class="degree-detail" data-i18n="bachelorThesis">ВКР: «Методы глубокого обучения для построения ФРТ конфокального микроскопа»</span></article></div>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow section-index">03 / <span data-i18n="educationLabel">ОБРАЗОВАНИЕ</span></p>
+            <h2 data-i18n="educationTitle">Учился и изучал</h2>
+          </div>
+          <p class="section-note" data-i18n="educationNote">Санкт-Петербургский политехнический<br>университет Петра
+            Великого</p>
+        </div>
+        <div class="education-grid">
+          <article class="degree"><span class="degree-date">2023 — 2025</span>
+            <h3 data-i18n="master">Магистратура</h3>
+            <p data-i18n="degreeField">Прикладная математика и информатика</p><span class="degree-detail"
+              data-i18n="masterThesis">ВКР: «Мультиагентная сеть сопровождения исследования»</span>
+          </article>
+          <article class="degree"><span class="degree-date">2019 — 2023</span>
+            <h3 data-i18n="bachelor">Бакалавриат</h3>
+            <p data-i18n="degreeField">Прикладная математика и информатика</p><span class="degree-detail"
+              data-i18n="bachelorThesis">ВКР: «Методы глубокого обучения для построения ФРТ конфокального
+              микроскопа»</span>
+          </article>
+        </div>
       </section>
-      <section class="skills-band"><span class="eyebrow" data-i18n="toolkit">ИНСТРУМЕНТЫ</span><div class="skill-list">PyTorch <i>·</i> Transformers <i>·</i> LangChain / LangGraph <i>·</i> scikit-learn <i>·</i> Docker <i>·</i> ClearML <i>·</i> Streamlit</div></section>
-      <section class="closing" id="contact"><p class="eyebrow" data-i18n="closingEyebrow">СОВМЕСТНЫЕ ИССЛЕДОВАНИЯ</p><h2 data-i18n="closingTitle">Буду рад обсудить сотрудничество.</h2><p class="contact-copy" data-i18n="contactCopy">Открыт к совместным исследованиям, научным проектам и инженерным задачам в NLP, DL-RL, GenAI и computer vision.</p><a class="button button-primary" href="mailto:sachuk.as.bsns@gmail.com">sachuk.as.bsns@gmail.com <span>↗</span></a></section>
+      <section class="skills-band"><span class="eyebrow" data-i18n="toolkit">ИНСТРУМЕНТЫ</span>
+        <div class="skill-list">PyTorch <i>·</i> Transformers <i>·</i> LangChain / LangGraph <i>·</i> scikit-learn
+          <i>·</i> Docker <i>·</i> ClearML <i>·</i> Streamlit
+        </div>
+      </section>
+      <section class="closing" id="contact">
+        <p class="eyebrow" data-i18n="closingEyebrow">СОВМЕСТНЫЕ ИССЛЕДОВАНИЯ</p>
+        <h2 data-i18n="closingTitle">Буду рад обсудить сотрудничество.</h2>
+        <p class="contact-copy" data-i18n="contactCopy">Открыт к совместным исследованиям, научным проектам и инженерным
+          задачам в NLP, DL-RL, GenAI и computer vision.</p><a class="button button-primary"
+          href="mailto:sachuk.as.bsns@gmail.com">sachuk.as.bsns@gmail.com <span>↗</span></a>
+      </section>
     </main>
-    <footer><a class="wordmark" href="#home">Alex Sachuk</a><span>© <span id="year"></span> Alexander Sachuk</span><a href="https://github.com/AS2" target="_blank" rel="noreferrer">GitHub ↗</a><a href="#home" class="back-top" data-i18n="backTop">Наверх ↑</a></footer>
+    <footer><a class="wordmark" href="#home">Alex Sachuk</a><span>© <span id="year"></span> Alexander Sachuk</span><a
+        href="https://github.com/AS2" target="_blank" rel="noreferrer">GitHub ↗</a><a href="#home" class="back-top"
+        data-i18n="backTop">Наверх ↑</a></footer>
   </div>
   <script src="script.js"></script>
 </body>
+
 </html>
